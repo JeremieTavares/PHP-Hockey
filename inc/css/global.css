@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+
+/**************************/
+/* MISE EN FORME GÉNÉRALE */
+/**************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+body {
+    background-color:#00afff;
+}
+
+main {
+    background-color: white;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 60vh;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    color: #BD2438;
+}
+
+a {
+    color:blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/****************************/
+/* MISE EN FORME DE L'ENÊTE */
+/****************************/
+header {
+    background-color: blue;
+    border-bottom: 3px solid black;
+    display: flex;
+    align-items: center;
+    min-height: 20vh;
+    padding: 10px;
+}
+
+header img {
+    width: 10%;
+}
+
+header nav {
+    width: 90%;
+}
+
+header li {
+    margin: 10px 0 10px 30px;
+}
+
+header, header a {
+    color: white;
+}
+
+
+/*********************************/
+/* MISE EN FORME DES FORMULAIRES */
+/*********************************/
+form {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+form input[type=submit] {
+    width: 20%;
+    margin: 0 40%;
+}
+
+
+/*****************************************/
+/* MISE EN FORME DE LA LISTE DES PARTIES */
+/*****************************************/
+table {
+    width: 80%;
+    margin: 0 10%;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+thead  {
+    background-color: #011F62;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: pink;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+
+/*********************************/
+/* MISE EN FORME DU PIED DE PAGE */
+/*********************************/
+footer {
+    background-color: #BD2438;
+    border-top: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+}
+
+.flexColEquipeAdd {
+    display: flex;
+    width: 50%;
+}

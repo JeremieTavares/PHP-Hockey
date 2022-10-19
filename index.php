@@ -9,9 +9,6 @@
     $db = dbConnect::getMySqlConnection();
 	$action = isset($_GET['action']) ? $_GET['action'] : 'home';
 
-    if (isset($_GET['action']))
-        $action = $_GET['action'];
-
     switch ($action) {
         case 'list':
             $controller = new ListController($db);
